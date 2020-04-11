@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "5c91d208-a21e-45e7-9e68-9e8d34324d94",
+		"name": "COVID-19 PH Api's",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GMA - Cases per region",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://e.infogram.com/api/live/flex/79217dd9-172b-4259-bd90-e7c2363651ba/774d135f-bca5-4005-8300-48cb3cec938c",
+					"protocol": "https",
+					"host": [
+						"e",
+						"infogram",
+						"com"
+					],
+					"path": [
+						"api",
+						"live",
+						"flex",
+						"79217dd9-172b-4259-bd90-e7c2363651ba",
+						"774d135f-bca5-4005-8300-48cb3cec938c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "APIFY - NCOVTRACKER DOH - Get latest counts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.apify.com/v2/key-value-stores/lFItbkoNDXKeSWBBA/records/LATEST?disableRedirect=true",
+					"protocol": "https",
+					"host": [
+						"api",
+						"apify",
+						"com"
+					],
+					"path": [
+						"v2",
+						"key-value-stores",
+						"lFItbkoNDXKeSWBBA",
+						"records",
+						"LATEST"
+					],
+					"query": [
+						{
+							"key": "disableRedirect",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
